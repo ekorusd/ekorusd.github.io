@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Eko R. Suparmanto | Portofolio</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on Eko R. Suparmanto | Portofolio</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Apr 2026 10:22:11 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Portofolio Seo Ai</title>
+      <link>http://localhost:1313/posts/portofolio-seo-ai/</link>
+      <pubDate>Mon, 27 Apr 2026 10:22:11 +0700</pubDate>
+      <guid>http://localhost:1313/posts/portofolio-seo-ai/</guid>
+      <description>&lt;p&gt;## Optimasi SEO Menggunakan AI&lt;/p&gt;
+&lt;p&gt;Halo, saya seorang **Chemical Engineer** yang merambah ke dunia digital.&lt;/p&gt;
+&lt;p&gt;Di sini saya menggabungkan logika teknik dengan strategi SEO.&lt;/p&gt;
+&lt;p&gt;### Proyek yang saya kerjakan:&lt;/p&gt;
+&lt;p&gt;* **WiroBot**: AI Assistant berbasis Telegram.&lt;/p&gt;
+&lt;p&gt;* **CrewAI**: Otomatisasi workflow menggunakan AI Agent.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

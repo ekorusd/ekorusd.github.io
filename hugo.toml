@@ -1,0 +1,32 @@
+baseURL = 'https://example.org/'
+locale = 'en-us'
+title = 'Eko R. Suparmanto | Portofolio'
+theme = "PaperMod"
+
+[params.homeInfoParams]
+    Title = "Halo, Saya Eko R. Suparmanto 👋"
+    Content = "Chemical Engineer | SEO Specialist | AI Enthusiast. Saya menggabungkan logika teknik dengan strategi digital untuk mengoptimalkan performa bisnis."
+
+[[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/ekorusd"
+
+[[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/eko-r-suparmanto-12473b332/"
+
+[[params.socialIcons]]
+    name = "email"
+    url = "mailto:suvarmanto@gmail.com"
+
+[[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+
+[[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 20
