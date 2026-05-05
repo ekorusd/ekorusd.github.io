@@ -1,25 +1,67 @@
-:root {
-    --neobrutalism-yellow: #f4df4e; /* Warna kuning khas */
-    --neobrutalism-border: #000000;
-}
+name: Deploy Hugo site to Pages
 
-/* Membuat kotak postingan menjadi kotak tegas dengan bayangan hitam */
-.post-entry {
-    background: var(--neobrutalism-yellow) !important;
-    border: 4px solid var(--neobrutalism-border) !important;
-    box-shadow: 8px 8px 0px 0px var(--neobrutalism-border) !important;
-    border-radius: 0px !important; /* Neo-brutalism biasanya tidak pakai lengkungan */
-    transition: all 0.2s ease;
-}
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
 
-.post-entry:hover {
-    transform: translate(-4px, -4px);
-    box-shadow: 12px 12px 0px 0px var(--neobrutalism-border) !important;
-}
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
-/* Mengubah gaya tombol */
-.button {
-    border: 3px solid #000 !important;
-    box-shadow: 4px 4px 0px 0px #000 !important;
-    border-radius: 0px !important;
-}
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Install Hugo CLI
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.147.0'
+          extended: true
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Install Node.js dependencies
+        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+
+      - name: Build with Hugo
+        env:
+          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
+          HUGO_ENVIRONMENT: production
+        run: |
+          hugo \
+            --minify \
+            --baseURL "${{ steps.pages.outputs.base_url }}/"
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
