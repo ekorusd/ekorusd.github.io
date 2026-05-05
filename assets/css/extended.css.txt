@@ -1,0 +1,25 @@
+:root {
+    --neobrutalism-yellow: #f4df4e; /* Warna kuning khas */
+    --neobrutalism-border: #000000;
+}
+
+/* Membuat kotak postingan menjadi kotak tegas dengan bayangan hitam */
+.post-entry {
+    background: var(--neobrutalism-yellow) !important;
+    border: 4px solid var(--neobrutalism-border) !important;
+    box-shadow: 8px 8px 0px 0px var(--neobrutalism-border) !important;
+    border-radius: 0px !important; /* Neo-brutalism biasanya tidak pakai lengkungan */
+    transition: all 0.2s ease;
+}
+
+.post-entry:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 12px 12px 0px 0px var(--neobrutalism-border) !important;
+}
+
+/* Mengubah gaya tombol */
+.button {
+    border: 3px solid #000 !important;
+    box-shadow: 4px 4px 0px 0px #000 !important;
+    border-radius: 0px !important;
+}
