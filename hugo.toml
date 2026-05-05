@@ -19,6 +19,12 @@ theme = "PaperMod"
     name = "email"
     url = "mailto:suvarmanto@gmail.com"
 
+[[params]]
+    # ... parameter lainnya ...
+    assets = { disableHLJS = false }
+    # Tambahkan baris di bawah ini:
+    customCSS = ["css/extended.css"]
+
 [[menu.main]]
     identifier = "posts"
     name = "Posts"
