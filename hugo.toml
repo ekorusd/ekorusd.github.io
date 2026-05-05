@@ -19,7 +19,7 @@ theme = "PaperMod"
     name = "email"
     url = "mailto:suvarmanto@gmail.com"
 
-[[params]]
+[params]
     # ... parameter lainnya ...
     assets = { disableHLJS = false }
     # Tambahkan baris di bawah ini:
