@@ -17,6 +17,24 @@ header, .nav, nav {
     box-shadow: 0 4px 0 #000 !important;
 }
 
+/* Fix navbar text */
+header a, .logo, header span {
+    color: #000 !important;
+}
+
+/* Fix post card title text */
+.entry-title a {
+    color: #000 !important;
+    font-weight: 800 !important;
+}
+
+/* Fix dark mode toggle icon */
+#theme-toggle {
+    color: #000 !important;
+    border: 2px solid #000 !important;
+    background: #f4df4e !important;
+}
+
 .nav a, header a, .logo {
     color: #000 !important;
     font-weight: 700 !important;
