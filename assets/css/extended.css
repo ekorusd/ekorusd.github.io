@@ -40,6 +40,24 @@ header a, .logo, header span {
     font-weight: 700 !important;
 }
 
+/* Force semua teks navbar jelas */
+.nav, .nav a, header, header a, header span, header button {
+    color: #000 !important;
+    opacity: 1 !important;
+}
+
+/* Force judul card jelas */
+.entry-title, .entry-title a, h2, h1 {
+    color: #000 !important;
+    opacity: 1 !important;
+}
+
+/* Matikan dark mode */
+.dark body, body.dark {
+    background: #87CEEB !important;
+    color: #000 !important;
+}
+
 /* HERO */
 .first-entry, .home-info {
     background: #f4df4e !important;
