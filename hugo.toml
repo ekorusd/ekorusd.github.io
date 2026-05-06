@@ -4,16 +4,15 @@ title = 'Eko R. Suparmanto | Portofolio'
 theme = "PaperMod"
 
 [params]
-    [params.homeInfoParams]
-        Title = "Halo, Saya Eko R. Suparmanto 👋"
-        Content = "Chemical Engineer | SEO Specialist | AI Enthusiast. Saya menggabungkan logika teknik dengan strategi digital untuk mengoptimalkan performa bisnis."
-
-    [params.assets]
-        disableHLJS = false
-        css = ["extended.css"]
-        
-    [params]
     defaultTheme = "light"
+
+[params.homeInfoParams]
+    Title = "Halo, Saya Eko R. Suparmanto 👋"
+    Content = "Chemical Engineer | SEO Specialist | AI Enthusiast. Saya menggabungkan logika teknik dengan strategi digital untuk mengoptimalkan performa bisnis."
+
+[params.assets]
+    disableHLJS = false
+    css = ["extended.css"]
 
 [[params.socialIcons]]
     name = "github"
