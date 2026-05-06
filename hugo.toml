@@ -11,6 +11,9 @@ theme = "PaperMod"
     [params.assets]
         disableHLJS = false
         css = ["extended.css"]
+        
+    [params]
+    defaultTheme = "light"
 
 [[params.socialIcons]]
     name = "github"
