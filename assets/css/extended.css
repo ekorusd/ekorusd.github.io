@@ -1,31 +1,91 @@
-:root {
-    /* Warna background utama - kita ganti jadi abu-abu kalem agar tidak silau */
-    --theme: #e3e3e3 !important; 
-    /* Warna teks utama - kita buat hitam pekat agar kontras */
-    --primary: #000000 !important;
-    /* Warna teks sekunder/deskripsi */
-    --secondary: #333333 !important;
-    /* Warna heading/nama di atas */
-    --header-text: #000000 !important;
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700;800&display=swap" rel="stylesheet">
+
+<style>
+* {
+    font-family: 'Space Grotesk', sans-serif !important;
 }
 
-/* Mengatur background seluruh halaman */
 body {
-    background-color: var(--theme) !important;
-}
-
-/* Memperbaiki warna teks nama "Eko R. Suparmanto" agar jelas */
-.logo a, .menu li a {
-    color: var(--header-text) !important;
-    font-weight: 800 !important;
-}
-
-/* Membuat garis pembatas antar elemen lebih tegas */
-.header {
-    border-bottom: 4px solid #000 !important;
-}
-
-/* Post entry tetap kuning tapi teks di dalamnya hitam pekat */
-.post-entry {
+    background: #87CEEB !important;
     color: #000 !important;
 }
+
+/* NAVBAR */
+header, .nav, nav {
+    background: #fff !important;
+    border-bottom: 3px solid #000 !important;
+    box-shadow: 0 4px 0 #000 !important;
+}
+
+.nav a, header a, .logo {
+    color: #000 !important;
+    font-weight: 700 !important;
+}
+
+/* HERO */
+.first-entry, .home-info {
+    background: #f4df4e !important;
+    border: 3px solid #000 !important;
+    box-shadow: 6px 6px 0 #000 !important;
+    padding: 2rem !important;
+    margin-bottom: 2rem !important;
+}
+
+.home-info h1, .first-entry h1 {
+    background: #fff !important;
+    color: #000 !important;
+    padding: 0.5rem !important;
+    border: 2px solid #000 !important;
+}
+
+.home-info p, .first-entry p {
+    color: #000 !important;
+}
+
+.social-icons a {
+    color: #000 !important;
+}
+
+/* POST CARDS */
+.post-entry:nth-child(1) { background: #f4df4e !important; }
+.post-entry:nth-child(2) { background: #b8f0a0 !important; }
+.post-entry:nth-child(3) { background: #ffb3c6 !important; }
+.post-entry:nth-child(4) { background: #a0d4ff !important; }
+.post-entry:nth-child(5) { background: #ffd6a5 !important; }
+.post-entry:nth-child(6) { background: #c9b8f0 !important; }
+
+.post-entry {
+    border: 3px solid #000 !important;
+    box-shadow: 6px 6px 0 #000 !important;
+    border-radius: 0 !important;
+    transition: all 0.15s ease !important;
+    padding: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.post-entry:hover {
+    transform: translate(-3px, -3px) !important;
+    box-shadow: 9px 9px 0 #000 !important;
+}
+
+.post-entry h2, .entry-title {
+    background: #fff !important;
+    color: #000 !important;
+    font-weight: 800 !important;
+    padding: 0.3rem 0.5rem !important;
+    border: 2px solid #000 !important;
+}
+
+.entry-content, .entry-hint, .entry-footer, .post-meta {
+    color: #000 !important;
+    background: transparent !important;
+}
+
+/* FOOTER */
+footer {
+    border-top: 3px solid #000 !important;
+    background: #fff !important;
+    color: #000 !important;
+    font-weight: 700 !important;
+}
+</style>
