@@ -4,11 +4,13 @@ title = 'Eko R. Suparmanto | Portofolio'
 theme = "PaperMod"
 
 [params]
-    homeInfoParams = { Title = "Halo, Saya Eko R. Suparmanto 👋", Content = "Chemical Engineer | SEO Specialist | AI Enthusiast. Saya menggabungkan logika teknik dengan strategi digital untuk mengoptimalkan performa bisnis." }
+    [params.homeInfoParams]
+        Title = "Halo, Saya Eko R. Suparmanto 👋"
+        Content = "Chemical Engineer | SEO Specialist | AI Enthusiast. Saya menggabungkan logika teknik dengan strategi digital untuk mengoptimalkan performa bisnis."
 
-[params.assets]
-    disableHLJS = false
-    css = ["extended.css"]
+    [params.assets]
+        disableHLJS = false
+        css = ["extended.css"]
 
 [[params.socialIcons]]
     name = "github"
